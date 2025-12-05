@@ -19,7 +19,7 @@
     "vue-router": "^4.6.0"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.2.0",
+    "@iconify-json/lucide": "^1.2.78",
     "@tailwindcss/vite": "^4.1.0",
     "@tsconfig/node22": "^22.0.0",
     "@types/node": "^22.0.0",
