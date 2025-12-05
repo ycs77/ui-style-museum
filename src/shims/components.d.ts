@@ -11,7 +11,18 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    LucideArrowRight: typeof import('~icons/lucide/arrow-right')['default']
+    LucideCheck: typeof import('~icons/lucide/check')['default']
+    LucideCheckCircle2: typeof import('~icons/lucide/check-circle2')['default']
+    LucideCopy: typeof import('~icons/lucide/copy')['default']
+    LucideGamepad2: typeof import('~icons/lucide/gamepad2')['default']
+    LucideMousePointer2: typeof import('~icons/lucide/mouse-pointer2')['default']
+    LucideSearch: typeof import('~icons/lucide/search')['default']
+    LucideSettings: typeof import('~icons/lucide/settings')['default']
+    LucideSparkles: typeof import('~icons/lucide/sparkles')['default']
+    PromptCard: typeof import('./../components/PromptCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StyleNavbar: typeof import('./../components/StyleNavbar.vue')['default']
   }
 }

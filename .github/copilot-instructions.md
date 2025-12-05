@@ -32,6 +32,20 @@ A Vue 3 + TypeScript starter template with file-based routing, auto-imports, and
 - Project uses TypeScript references with separate configs: `tsconfig.app.json` (src), `tsconfig.node.json` (vite config)
 - Alias `@/` points to `src/` directory (configured in `vite.config.ts`)
 
+### Vue Component Patterns
+- **Always use Composition API**
+- **Use `<script setup>` syntax** for all components
+- **Define props inline** - use `defineProps<{ propName: Type }>()` with inline type definitions, not separate interfaces
+- Example:
+  ```vue
+  <script setup lang="ts">
+  const props = defineProps<{
+    title: string
+    count?: number
+  }>()
+  </script>
+  ```
+
 ## Development Workflow
 
 ### Commands
