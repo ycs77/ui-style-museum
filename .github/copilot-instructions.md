@@ -12,13 +12,15 @@ A Vue 3 + TypeScript starter template with file-based routing, auto-imports, and
 
 ### Auto-Imports (unplugin-auto-import)
 - Vue APIs (`ref`, `computed`, `watch`, etc.) and composables are globally available - **no imports needed**
-- VueUse composables from `@vueuse/core` and custom functions from `src/composables/`, `src/utils/` are auto-imported
+- All VueUse composables from `@vueuse/core` auto-imported (e.g., `useMouse`, `useLocalStorage`, `useToggle`)
+- Custom functions from `src/composables/`, `src/utils/` are auto-imported
 - Type definitions generated in `src/shims/auto-imports.d.ts`
 - When adding new composables/utils, they become immediately available without import statements
 
 ### Component Auto-Registration (unplugin-vue-components)
 - Components in `src/components/` are globally registered - use directly in templates without imports
-- Icons via `unplugin-icons`: use `<IconName />` directly (e.g., `<HeroiconsHome />` for Heroicons)
+- Icons via `unplugin-icons` with Lucide icons (`@iconify-json/lucide`): use `<LucideIconName />` directly (e.g., `<LucideHome />`, `<LucideArrowRight />`)
+- Icon resolver configured with no prefix, so Lucide icons work with `Lucide` prefix only
 - Type definitions in `src/shims/components.d.ts`
 
 ### Styling with Tailwind CSS v4
@@ -44,7 +46,7 @@ yarn type-check    # Run Vue TSC type checking
 1. **New page**: Create `src/pages/foo.vue` - route auto-registers as `/foo`
 2. **New component**: Create `src/components/Button.vue` - use as `<Button />` anywhere
 3. **New composable/utility**: Create in `src/composables/` or `src/utils/` - auto-imported everywhere
-4. **Icons**: Install iconify set (e.g., `@iconify-json/heroicons`), use as `<HeroiconsArrowRight />`
+4. **Icons**: Install iconify set (e.g., `@iconify-json/lucide`), update resolver, use as `<LucideHome />`, `<LucideArrowRight />`
 
 ### Important Notes
 - **No import statements** for Vue APIs, composables, utils, or components in `src/components/`
