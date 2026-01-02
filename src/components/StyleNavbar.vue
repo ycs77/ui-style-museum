@@ -79,8 +79,8 @@
 </template>
 
 <script setup lang="ts">
-import type { StyleConfig, StyleKey } from '@/types/styles'
-import { styles } from '@/types/styles'
+import type { StyleConfig, StyleKey } from '@/utils/styles'
+import { styles } from '@/utils/styles'
 
 defineProps<{
   activeStyle: StyleConfig

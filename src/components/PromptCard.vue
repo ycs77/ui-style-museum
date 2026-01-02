@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import type { StyleConfig, StyleKey } from '@/types/styles'
+import type { StyleConfig, StyleKey } from '@/utils/styles'
 import { useClipboard } from '@vueuse/core'
 
 defineProps<{
