@@ -21,8 +21,6 @@ declare module 'vue' {
     LucideSettings: typeof import('~icons/lucide/settings')['default']
     LucideSparkles: typeof import('~icons/lucide/sparkles')['default']
     PromptCard: typeof import('./../components/PromptCard.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
     StyleNavbar: typeof import('./../components/StyleNavbar.vue')['default']
   }
 }

@@ -5,7 +5,6 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 import TailwindCSS from '@tailwindcss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import Pages from 'vite-plugin-pages'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
@@ -35,7 +34,6 @@ export default defineConfig({
       ],
       dts: 'src/shims/components.d.ts',
     }),
-    Pages(),
     Icons(),
   ],
   resolve: {
