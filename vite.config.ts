@@ -10,6 +10,9 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production'
+    ? '/ui-style-museum/'
+    : '/',
   plugins: [
     Vue(),
     VueDevTools(),
